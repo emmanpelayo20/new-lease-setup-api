@@ -3,7 +3,7 @@
 How to setup 
 
 1. Create .env file
-   DATABASE_URL=postgresql://<username>:<password>@localhost:5432/lease_request_poc
+   DATABASE_URL=postgresql://username:password@localhost:5432/lease_request_poc
 
 2. Activate virtual environment
 
