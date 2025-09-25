@@ -1,14 +1,18 @@
 # new-lease-setup-api
 
-how to run
-1. Activate virtual environment
+How to setup 
 
-python -m venv my_env
-my_env\Scripts\Activate.ps1
+1. Create .env file
+   DATABASE_URL=postgresql://<username>:<password>@localhost:5432/lease_request_poc
 
-2. Install dependencies
+2. Activate virtual environment
 
-pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv pydantic[email]
+3. Install dependencies
 
-3. Run api: 
-uvicorn main:app --reload --host 127.0.0.1 --port 3002
+    pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv pydantic[email]
+
+4. Run api: 
+    uvicorn main:app --reload --host 127.0.0.1 --port 3002
+
+Note:
+The postgresql tables will be automatically created
